@@ -1,0 +1,21 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: rajivsingh
+ * Date: 8/16/16
+ * Time: 1:38 AM
+ */
+
+
+/**
+ * Implements hook_menu().
+ */
+function d8cards_menu() {
+  $items['admin/config/content/snippets'] = array(
+    'title' => 'Code snippets',
+    'description' => "Configure Code Snippets module.",
+    'route_name' => 'd8cards.settings',
+  );
+
+  return $items;
+}

@@ -1,0 +1,15 @@
+d8cards.my_page:
+  path: '/mypage/page'
+  defaults:
+    _controller: Drupal\d8cards\Controller\D8CardsController::d8cards
+    _title: 'Create new account'
+  requirements:
+    _permission: 'access content'
+
+d8cards.settings:
+  path: '/admin/config/content/d8cards'
+  defaults:
+    _form: '\Drupal\d8cards\Form\D8cardsSettingsForm'
+    _title: 'D8Cards Configuration form'
+  requirements:
+    _permission: 'administer site configuration'
